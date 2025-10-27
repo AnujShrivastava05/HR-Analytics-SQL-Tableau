@@ -72,5 +72,16 @@ By integrating **SQL-based data cleaning and KPI computation** with **Tableau da
 
 ---
 
-## 📂 Project Structure
+
+---
+
+## 🏁 Conclusion
+
+This project demonstrates the integration of **data analytics and visualization** to drive HR decision-making.  
+By combining **SQL-based analysis** with **Tableau’s visual capabilities**, it highlights how structured analytics can enhance workforce management, improve operational efficiency, and reduce business risk.
+
+---
+
+⭐ **If you like this project, consider giving it a star on GitHub!**
+
 
