@@ -77,7 +77,7 @@ Improved HR reporting accuracy and compliance with analytics best practices.
 SQL Querying • Data Analysis • Tableau Dashboarding • KPI Tracking • Data Validation • Workforce Analytics • Reporting Accuracy • Business Decision Support
 
 📂 Project Structure
-📁 Bank-HR-Analytics
+📁 HR-Analytics
 ├── 📄 HR_Analytics_SQL_Queries.sql
 ├── 📊 HR_Analytics_Dashboard.twb
 ├── 📈 Tableau_Snapshot.png
