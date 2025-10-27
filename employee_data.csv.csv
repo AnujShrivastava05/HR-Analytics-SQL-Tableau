@@ -1,0 +1,97 @@
+﻿Employee_Count,,,,,,,,,,,,,,,,,,,,,,,
+1470,,,,Employee_Count,,1470,,Attrition_Rate,,16.12,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+ATTRITION COUNT,,,,,,,,,,,,,,,,,,,,,,,
+count(attrition),,,,Attrition_Count,,237,,,,,,,,,,,,,,,,,
+237,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+ATTRITION RATE ,,,,,,,,,,,,,,,,,,,,,,,
+"round (((SELECT count(attrition) FROM hrdata WHERE attrition='Yes')/ 
+sum(employee_count)) * 100,2)",,,,,,,,,,,,,,,,,,,,,,,
+16.12,,,,,,,,,,,,,,,,,,,,,,,
+,,,,Active_Employees,,1233,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+ACTIVE EMPLOYEES,,,,,,,,,,,,,,,,,,,,,,,
+"sum(employee_count) - (SELECT count(attrition) FROM hrdata  
+WHERE attrition='Yes')",,,,,,,,,,,,,,,,,,,,,,,
+1233,,,,,,,,,,,,,,,,,,,,,,,
+,,,,Avg_Age,,37,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+Avg_age,,,,,,,,,,,,,,,,,,,,,,,
+37,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,department,,,,,,,,,,,,,,,
+,,,,Attrition_By_Gender,,,,,,,,,,,,,,,,,,,
+ATTRITIONBY GENDER ,,,,,,,,,,,,,,,,,,,,,,,
+gender,attrition_count,,,Gender,Attrition_count,,,,,,,,,,,,,,,,,,
+Female,87,,,Female,87,,,,,,,,,,,,,,,,,,
+Male,150,,,Male,150,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+DEPT WISE ATTRITION ,,,,,,Department_Wise_Attrition,,,,,,,,,,,,,,,,,
+department,total_attritions,female_attrition_pct_of_total,,,,,,,,,,,,,,,,,,,,,
+R&D,133,18.14,,,,Department,total_attritions,female_attrition_pct_of_total,,,,,,,,,,,,,,,
+Sales,92,16.03,,,,R&D,133,18.14,,,,,,,,,,,,,,,
+HR,12,2.53,,,,Sales,92,16.03,,,,,,,,,,,,,,,
+,,,,,,HR,12,2.53,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,JOB SATISFACTION RATE ,,,,
+,,,,,,EDU FIELD WISE ATTRITION ,,,,ATTRITION RATE BY GENDER ,,,FOR DIFFEENT ,,AGE GROUPS ,,,,Job Role,Rating 1,Rating 2,Rating 3,Rating 4
+NO OF EMPLOYEE BY AGE GROUP ,,,,,,,,,,age_band,gender,attrition,pct,,,,,,Healthcare Representative,26,19,43,43
+,,,,,,education_field,attrition_count,,,25 - 34,Male,69,29.11,,,,,,Human Resources,10,16,13,13
+age,employee_count,,,,,Life Sciences,89,,,25 - 34,Female,43,18.14,,,,,,Laboratory Technician,56,48,75,80
+18,8,,,,,Medical,63,,,35 - 44,Male,37,15.61,,,,,,Manager,21,21,27,33
+19,9,,,,,Marketing,35,,,35 - 44,Female,14,5.91,,,,,,Manufacturing Director,26,32,49,38
+20,11,,,,,Technical Degree,32,,,45 - 54,Male,16,6.75,,,,,,Research Director,15,16,27,22
+21,13,,,,,Other,11,,,45 - 54,Female,9,3.8,,,,,,Research Scientist,54,53,90,95
+22,16,,,,,Human Resources,7,,,Over 55,Male,8,3.38,,,,,,Sales Executive,69,54,91,112
+23,14,,,,,,,,,Over 55,Female,3,1.27,,,,,,Sales Representative,12,21,27,23
+24,26,,,,,,,,,Under 25,Male,20,8.44,,,,,,,,,,
+25,26,,,,,,,,,Under 25,Female,18,7.59,,,,,,,,,,
+26,39,,No._of_Employees_by_Age_Group,,,Education_Field_wise_Attrition,,,,,,,,,,,,,,,,,
+27,48,,,,,,,,,,,,,,,,,,Job_Satisfaction_Rate,,,,
+28,48,,Age,Employee_count,,Education_field,Attrition_count,,,Attrition_Rate_By_Gender_For_Different_Age_Group,,,,,,,,,,,,,
+29,68,,18,8,,Life Sciences,89,,,,,,,,,,,,Job Role,Rating 1,Rating 2,Rating 3,Rating 4
+30,60,,19,9,,Medical,63,,,age_band,gender,attrition,pct,,,,,,Healthcare Representative,26,19,43,43
+31,69,,20,11,,Marketing,35,,,25 - 34,Male,69,29.11,,,,,,Human Resources,10,16,13,13
+32,61,,21,13,,Technical Degree,32,,,25 - 34,Female,43,18.14,,,,,,Laboratory Technician,56,48,75,80
+33,58,,22,16,,Other,11,,,35 - 44,Male,37,15.61,,,,,,Manager,21,21,27,33
+34,77,,23,14,,Human Resources,7,,,35 - 44,Female,14,5.91,,,,,,Manufacturing Director,26,32,49,38
+35,78,,24,26,,,,,,45 - 54,Male,16,6.75,,,,,,Research Director,15,16,27,22
+36,69,,25,26,,,,,,45 - 54,Female,9,3.8,,,,,,Research Scientist,54,53,90,95
+37,50,,26,39,,,,,,Over 55,Male,8,3.38,,,,,,Sales Executive,69,54,91,112
+38,58,,27,48,,,,,,Over 55,Female,3,1.27,,,,,,Sales Representative,12,21,27,23
+39,42,,28,48,,,,,,Under 25,Male,20,8.44,,,,,,,,,,
+40,57,,29,68,,,,,,Under 25,Female,18,7.59,,,,,,,,,,
+41,40,,30,60,,,,,,,,,,,,,,,,,,,
+42,46,,31,69,,,,,,,,,,,,,,,,,,,
+43,32,,32,61,,,,,,,,,,,,,,,,,,,
+44,33,,33,58,,,,,,,,,,,,,,,,,,,
+45,41,,34,77,,,,,,,,,,,,,,,,,,,
+46,33,,35,78,,,,,,,,,,,,,,,,,,,
+47,24,,36,69,,,,,,,,,,,,,,,,,,,
+48,19,,37,50,,,,,,,,,,,,,,,,,,,
+49,24,,38,58,,,,,,,,,,,,,,,,,,,
+50,30,,39,42,,,,,,,,,,,,,,,,,,,
+51,19,,40,57,,,,,,,,,,,,,,,,,,,
+52,18,,41,40,,,,,,,,,,,,,,,,,,,
+53,19,,42,46,,,,,,,,,,,,,,,,,,,
+54,18,,43,32,,,,,,,,,,,,,,,,,,,
+55,22,,44,33,,,,,,,,,,,,,,,,,,,
+56,14,,45,41,,,,,,,,,,,,,,,,,,,
+57,4,,46,33,,,,,,,,,,,,,,,,,,,
+58,14,,47,24,,,,,,,,,,,,,,,,,,,
+59,10,,48,19,,,,,,,,,,,,,,,,,,,
+60,5,,49,24,,,,,,,,,,,,,,,,,,,
+,,,50,30,,,,,,,,,,,,,,,,,,,
+,,,51,19,,,,,,,,,,,,,,,,,,,
+,,,52,18,,,,,,,,,,,,,,,,,,,
+,,,53,19,,,,,,,,,,,,,,,,,,,
+,,,54,18,,,,,,,,,,,,,,,,,,,
+,,,55,22,,,,,,,,,,,,,,,,,,,
+,,,56,14,,,,,,,,,,,,,,,,,,,
+,,,57,4,,,,,,,,,,,,,,,,,,,
+,,,58,14,,,,,,,,,,,,,,,,,,,
+,,,59,10,,,,,,,,,,,,,,,,,,,
+,,,60,5,,,,,,,,,,,,,,,,,,,
